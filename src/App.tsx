@@ -536,25 +536,25 @@ const Hero = ({ onOpenBookService }: { onOpenBookService: () => void }) => {
       </div>
 
       {/* Manual Slide Navigation Controls */}
-      <div className="absolute left-3 right-3 sm:left-6 sm:right-6 md:left-12 md:right-12 top-1/2 -translate-y-1/2 flex justify-between items-center z-30 pointer-events-none">
+      <div className="absolute left-6 right-6 sm:left-6 sm:right-6 md:left-12 md:right-12 bottom-6 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 flex justify-between items-center z-30 pointer-events-none">
         <button
           onClick={prevSlide}
-          className="pointer-events-auto p-2 sm:p-3 rounded-full border border-paper/20 bg-ink/50 backdrop-blur-md text-paper/70 hover:text-accent hover:border-accent hover:bg-ink/80 transition-all duration-300 group cursor-pointer"
+          className="pointer-events-auto p-3 sm:p-3 rounded-full border border-paper/20 bg-ink/60 backdrop-blur-md text-paper/80 hover:text-accent hover:border-accent hover:bg-ink/90 transition-all duration-300 group cursor-pointer"
           aria-label="Previous slide"
         >
-          <ChevronLeft size={20} className="sm:w-6 sm:h-6 group-hover:-translate-x-0.5 transition-transform" />
+          <ChevronLeft size={22} className="sm:w-6 sm:h-6 group-hover:-translate-x-0.5 transition-transform" />
         </button>
         <button
           onClick={nextSlide}
-          className="pointer-events-auto p-2 sm:p-3 rounded-full border border-paper/20 bg-ink/50 backdrop-blur-md text-paper/70 hover:text-accent hover:border-accent hover:bg-ink/80 transition-all duration-300 group cursor-pointer"
+          className="pointer-events-auto p-3 sm:p-3 rounded-full border border-paper/20 bg-ink/60 backdrop-blur-md text-paper/80 hover:text-accent hover:border-accent hover:bg-ink/90 transition-all duration-300 group cursor-pointer"
           aria-label="Next slide"
         >
-          <ChevronRight size={20} className="sm:w-6 sm:h-6 group-hover:translate-x-0.5 transition-transform" />
+          <ChevronRight size={22} className="sm:w-6 sm:h-6 group-hover:translate-x-0.5 transition-transform" />
         </button>
       </div>
 
-      {/* Bottom Bar: Slide Counter, Caption & Progress */}
-      <div className="absolute bottom-4 sm:bottom-8 left-4 right-4 sm:left-6 sm:right-6 md:left-12 md:right-12 z-30 flex flex-row justify-between items-end gap-3 pointer-events-none">
+      {/* Bottom Bar: Slide Counter, Caption & Progress (Desktop/Tablet Only) */}
+      <div className="absolute bottom-4 sm:bottom-8 left-4 right-4 sm:left-6 sm:right-6 md:left-12 md:right-12 z-30 hidden sm:flex flex-row justify-between items-end gap-3 pointer-events-none">
         {/* Caption & Tag */}
         <div className="text-left backdrop-blur-md bg-ink/40 px-3 py-1.5 sm:px-4 sm:py-2 rounded border border-paper/10 pointer-events-auto max-w-[200px] sm:max-w-xs">
           <span className="text-accent text-[9px] sm:text-[10px] font-sans uppercase tracking-widest block truncate">
