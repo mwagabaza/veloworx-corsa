@@ -724,7 +724,7 @@ const Service = ({ onOpenBookService }: { onOpenBookService: (service?: string) 
       <FadeIn>
         <div className="relative aspect-[3/4] overflow-hidden">
           <img
-            src="/assets/workshop.jpg"
+            src="/assets/Image-mech-bike.jpg"
             alt="Mechanic working on bike"
             className="w-full h-full object-cover"
           />
